@@ -1,0 +1,24 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.busted.demo
+productName: Busted Demo
+protocols:
+  - name: Busted Demo Protocol
+    schemes:
+      - m1jsdemo
+win:
+  icon: checked-checkbox-64.ico
+  target:
+    - nsis
+    - portable
+  requestedExecutionLevel: requireAdministrator
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  runAfterFinish: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Busted Demo
+files: []
+electronVersion: 40.4.1
